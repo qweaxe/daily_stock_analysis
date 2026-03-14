@@ -81,6 +81,13 @@ jobs:
           OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL || secrets.OPENAI_BASE_URL }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL }}
 
+          # 自定义 API：
+          LLM_CHANNELS: ${{ secrets.LLM_CHANNELS }}
+          LLM_MY_PROXY_API_KEY: ${{ secrets.LLM_MY_PROXY_API_KEY }}
+          LLM_MY_PROXY_BASE_URL: ${{ secrets.LLM_MY_PROXY_BASE_URL }}
+          LLM_MY_PROXY_MODELS: ${{ secrets.LLM_MY_PROXY_MODELS }}
+          LLM_MY_PROXY_PROTOCOL: ${{ secrets.LLM_MY_PROXY_PROTOCOL }}
+
           # Anthropic / Claude
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || secrets.ANTHROPIC_MODEL || 'claude-3-5-sonnet-20241022' }}
