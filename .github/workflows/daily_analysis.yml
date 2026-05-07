@@ -91,7 +91,7 @@ jobs:
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL }}
 
           # 自定义 API：
-          LLM_CHANNELS: ${{ secrets.LLM_CHANNELS }}
+         # LLM_CHANNELS: ${{ secrets.LLM_CHANNELS }}
           LLM_MY_PROXY_API_KEY: ${{ secrets.LLM_MY_PROXY_API_KEY }}
           LLM_MY_PROXY_BASE_URL: ${{ secrets.LLM_MY_PROXY_BASE_URL }}
           LLM_MY_PROXY_MODELS: ${{ secrets.LLM_MY_PROXY_MODELS }}
